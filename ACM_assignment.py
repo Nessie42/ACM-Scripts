@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+#Eiriks comment
 # Explicit Numerical Methods
 def EulerEx(y0, h, n, f):
     n /= h
