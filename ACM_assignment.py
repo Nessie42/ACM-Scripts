@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-#Explicit Numerical Methods
+### Explicit Numerical Methods ###
 def EulerEx(y0, h, n, f):
     n = int(n/h)
     
@@ -51,7 +51,7 @@ def RK4Ex(y0, h, n, f):
     return x, y
 
 
-#Analysis
+### Analysis of differential equations ###
 def PhasePortrait(f, *crit_points):
     portrait = []
     
@@ -96,5 +96,6 @@ X, Y, Dx, Dy = SlopeField(-10, 10, 20, Function)
 
 x, y = RK4Ex(0, 1, 10, Function)
 
+### Plotting results ###
 plt.plot(x,y)
 plt.show()
